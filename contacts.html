@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Emergency Contacts | Silent SOS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.png">
+
+<h2>Silent <span>SOS</span></h2>
+
+</div>
+
+<ul class="menu">
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-table-columns"></i>
+
+<span>Dashboard</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="sos.html">
+
+<i class="fa-solid fa-bell"></i>
+
+<span>Emergency SOS</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="services.html">
+
+<i class="fa-solid fa-hospital"></i>
+
+<span>Services</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="report.html">
+
+<i class="fa-solid fa-file-circle-exclamation"></i>
+
+<span>Report Incident</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="alert-history.html">
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+<span>Alert History</span>
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="#">
+
+<i class="fa-solid fa-address-book"></i>
+
+<span>Emergency Contacts</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="profile.html">
+
+<i class="fa-solid fa-user"></i>
+
+<span>Profile</span>
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+<header class="topbar">
+
+<div>
+
+<h2>Emergency Contacts</h2>
+
+<p>
+
+Manage your trusted emergency contacts.
+
+</p>
+
+</div>
+
+<div class="profile">
+
+<div class="profile">
+
+<div class="profile-icon">
+    <i class="fa-solid fa-user"></i>
+</div>
+
+<div>
+    <h4 id="profileName">User</h4>
+    <p>User</p>
+</div>
+
+</div>
+</div>
+
+</header>
+
+
+<!-- ================= ADD CONTACT FORM ================= -->
+
+<section class="contact-section">
+
+<div class="report-card">
+
+<h2>Add Emergency Contact</h2>
+
+<form id="contactForm">
+
+<div class="form-group">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="contactName"
+placeholder="Enter contact name"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="contactPhone"
+placeholder="+91 XXXXX XXXXX"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Relationship</label>
+
+<select id="contactRelation" required>
+
+<option value="">Select Relationship</option>
+
+<option>Mother</option>
+
+<option>Father</option>
+
+<option>Brother</option>
+
+<option>Sister</option>
+
+<option>Spouse</option>
+
+<option>Friend</option>
+
+<option>Guardian</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="report-buttons">
+
+<button
+type="submit"
+class="submit-btn">
+
+<i class="fa-solid fa-user-plus"></i>
+
+Add Contact
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+<!-- ================= CONTACT LIST ================= -->
+
+<div class="report-card" style="margin-top:30px;">
+
+<h2>Saved Emergency Contacts</h2>
+
+<div id="contactList">
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Silent SOS Emergency System | Developed by Alphiya Mulla
+
+</p>
+
+</footer>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Report Incident | Silent SOS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.jpeg">
+
+<h2>Silent <span>SOS</span></h2>
+
+</div>
+
+<ul class="menu">
+
+<li>
+<a href="dashboard.html">
+<i class="fa-solid fa-table-columns"></i>
+<span>Dashboard</span>
+</a>
+</li>
+
+<li>
+<a href="sos.html">
+<i class="fa-solid fa-bell"></i>
+<span>Emergency SOS</span>
+</a>
+</li>
+
+<li>
+<a href="services.html">
+<i class="fa-solid fa-hospital"></i>
+<span>Services</span>
+</a>
+</li>
+
+<li class="active">
+<a href="#">
+<i class="fa-solid fa-file-circle-exclamation"></i>
+<span>Report Incident</span>
+</a>
+</li>
+
+<li>
+<a href="profile.html">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+<header class="topbar">
+
+<div>
+
+<h2>Report an Incident</h2>
+
+<p>Help emergency responders by reporting incidents quickly.</p>
+
+</div>
+
+<div class="profile">
+
+<div class="profile">
+
+<div class="profile-icon">
+    <i class="fa-solid fa-user"></i>
+</div>
+
+<div>
+    <h4 id="profileName">User</h4>
+    <p>User</p>
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ================= REPORT FORM ================= -->
+
+<section class="report-section">
+
+<div class="report-card">
+
+<h2>Incident Details</h2>
+
+<form id="reportForm">
+
+<div class="form-group">
+
+<label>Incident Type</label>
+
+<select id="incidentType">
+
+<option>Select Incident</option>
+
+<option>Road Accident</option>
+
+<option>Fire Emergency</option>
+
+<option>Medical Emergency</option>
+
+<option>Crime</option>
+
+<option>Natural Disaster</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Severity Level</label>
+
+<select id="severity">
+
+<option>Low</option>
+
+<option>Medium</option>
+
+<option>High</option>
+
+<option>Critical</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Location</label>
+
+<input type="text" id="incidentLocation"
+placeholder="Enter Incident Location">
+
+</div>
+
+<!-- ================= PHOTO UPLOAD ================= -->
+
+<div class="form-group">
+
+<label>Upload Incident Photo</label>
+
+<div class="upload-box">
+
+<i class="fa-solid fa-cloud-arrow-up"></i>
+
+<p>Drag & Drop or Click to Upload</p>
+
+<input type="file" id="incidentImage" accept="image/*">
+
+</div>
+
+</div>
+
+<!-- ================= DESCRIPTION ================= -->
+
+<div class="form-group">
+
+<label>Description</label>
+
+<textarea id="description"
+rows="6"
+placeholder="Describe what happened in detail..."></textarea>
+
+</div>
+
+<!-- ================= DATE & TIME ================= -->
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Date</label>
+
+<input type="date" id="incidentDate">
+
+</div>
+
+<div class="form-group">
+
+<label>Time</label>
+
+<input type="time" id="incidentTime">
+
+</div>
+
+</div>
+
+<!-- ================= CURRENT LOCATION ================= -->
+
+<div class="form-group">
+
+<label>GPS Location</label>
+
+<div class="location-input">
+
+<input
+type="text" id="currentLocation"
+placeholder="Current location will appear here" readonly>
+
+<button type="button" class="location-btn" id="getLocation">
+
+<i class="fa-solid fa-location-crosshairs"></i>
+
+Use Current Location
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= EMERGENCY CONTACT ================= -->
+
+<div class="form-group">
+
+<label>Notify Emergency Contact</label>
+
+<select id="notifyContact">
+
+<option>Yes</option>
+
+<option>No</option>
+
+</select>
+
+</div>
+
+<!-- ================= CHECKBOX ================= -->
+
+<div class="checkbox-group">
+
+<label>
+
+<input type="checkbox" required>
+
+I confirm that the information provided is accurate.
+
+</label>
+
+</div>
+
+<!-- ================= BUTTONS ================= -->
+
+<div class="report-buttons">
+
+<button
+type="reset"
+class="cancel-btn">
+
+Cancel
+
+</button>
+
+<button
+type="submit"
+class="submit-btn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Submit Report
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Silent SOS Emergency System | Developed by Alphiya Mulla
+
+</p>
+
+</footer>
+
+</html>

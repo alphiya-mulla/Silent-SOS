@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Services | Silent SOS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <img src="images/logo.jpeg">
+
+        <h2>Silent <span>SOS</span></h2>
+
+    </div>
+
+    <ul class="menu">
+
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="sos.html">
+                <i class="fa-solid fa-bell"></i>
+                <span>Emergency SOS</span>
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="#">
+                <i class="fa-solid fa-hospital"></i>
+                <span>Emergency Services</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="report.html">
+                <i class="fa-solid fa-file-circle-exclamation"></i>
+                <span>Report Incident</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+<header class="topbar">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input type="text"
+placeholder="Search hospitals, police stations...">
+
+</div>
+
+<div class="profile">
+
+<div class="profile">
+
+<div class="profile-icon">
+    <i class="fa-solid fa-user"></i>
+</div>
+
+<div>
+    <h4 id="profileName">User</h4>
+    <p>User</p>
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="welcome">
+
+<div class="welcome-text">
+
+<h1>
+
+Emergency Services
+
+</h1>
+
+<p>
+
+Locate nearby hospitals, police stations, fire stations and other emergency resources instantly.
+
+</p>
+
+</div>
+
+<div class="welcome-image">
+
+<img src="images/services.jpeg">
+
+</div>
+
+</section>
+
+<!-- ================= FILTERS ================= -->
+
+<section class="quick-actions">
+
+<div class="section-header">
+
+<h2>Categories</h2>
+
+</div>
+
+<div class="action-grid">
+
+<div class="action-card">
+
+<i class="fa-solid fa-hospital"></i>
+
+<h3>Hospitals</h3>
+
+<p>24×7 Emergency Care</p>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Police</h3>
+
+<p>Nearby Police Stations</p>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-fire-extinguisher"></i>
+
+<h3>Fire Brigade</h3>
+
+<p>Fire Emergency Support</p>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-kit-medical"></i>
+
+<h3>Medical Stores</h3>
+
+<p>24 Hour Pharmacies</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES LIST ================= -->
+
+<section class="services-list">
+
+    <div class="section-header">
+
+        <h2>Nearby Emergency Services</h2>
+
+        <a href="#">View All</a>
+
+    </div>
+
+    <section class="nearby-services-section">
+
+    <div id="servicesContainer">
+
+        <div class="loading">
+
+            <i class="fa-solid fa-spinner fa-spin"></i>
+
+            <p>Finding nearby emergency services...</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+<!-- ================= MAP SECTION ================= -->
+
+<section class="location-map">
+
+    <div class="section-header">
+
+        <h2>Emergency Services Map</h2>
+
+    </div>
+
+    <div class="map-card">
+
+        <i class="fa-solid fa-map-location-dot"></i>
+
+        <h3>Interactive Map</h3>
+
+        <p>
+
+            Live map integration will display nearby hospitals,
+            police stations and fire stations.
+
+        </p>
+
+        <button class="map-btn" onclick="openNearbyMap()">
+
+            Open Map
+
+        </button>
+
+    </div>
+
+</section>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Silent SOS Emergency System | Developed by Alphiya Mulla
+
+</p>
+
+</footer>
+
+</html>

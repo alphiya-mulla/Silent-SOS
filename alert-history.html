@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alert History | Silent SOS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.jpeg" alt="Logo">
+
+<h2>Silent <span>SOS</span></h2>
+
+</div>
+
+<ul class="menu">
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-table-columns"></i>
+
+<span>Dashboard</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="sos.html">
+
+<i class="fa-solid fa-bell"></i>
+
+<span>Emergency SOS</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="services.html">
+
+<i class="fa-solid fa-hospital"></i>
+
+<span>Services</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="report.html">
+
+<i class="fa-solid fa-file-circle-exclamation"></i>
+
+<span>Report Incident</span>
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="#">
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+<span>Alert History</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="profile.html">
+
+<i class="fa-solid fa-user"></i>
+
+<span>Profile</span>
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+<header class="topbar">
+
+<div>
+
+<h2>Alert History</h2>
+
+<p>
+
+View all emergency alerts and their current status.
+
+</p>
+
+</div>
+
+<div class="profile">
+
+<div class="profile-icon">
+    <i class="fa-solid fa-user"></i>
+</div>
+
+<div>
+    <h4 id="profileName">User</h4>
+    <p>User</p>
+</div>
+
+</div>
+
+
+
+
+
+</header>
+
+<!-- ================= FILTER BAR ================= -->
+
+<section class="history-filter">
+
+<input
+type="text"
+placeholder="Search alerts...">
+
+<select>
+
+<option>All Status</option>
+
+<option>Active</option>
+
+<option>Acknowledged</option>
+
+<option>Resolved</option>
+
+</select>
+
+</section>
+
+
+<!-- ================= ALERT CARDS ================= -->
+
+<section class="alert-history" id="alertHistory">
+
+<div class="history-card">
+
+<div class="history-icon active">
+
+<i class="fa-solid fa-bell"></i>
+
+</div>
+
+<div class="history-details">
+
+<h3>Medical Emergency</h3>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+MG Road, Pune
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-clock"></i>
+
+10 July 2026 | 09:45 AM
+
+</p>
+
+</div>
+
+<div class="history-status">
+
+<span class="status active">
+
+Active
+
+</span>
+
+<button class="view-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<div class="history-card">
+
+<div class="history-icon acknowledged">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+</div>
+
+<div class="history-details">
+
+<h3>Road Accident</h3>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Shivaji Nagar, Pune
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-clock"></i>
+
+09 July 2026 | 08:15 PM
+
+</p>
+
+</div>
+
+<div class="history-status">
+
+<span class="status acknowledged">
+
+Acknowledged
+
+</span>
+
+<button class="view-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<div class="history-card">
+
+<div class="history-icon resolved">
+
+<i class="fa-solid fa-fire"></i>
+
+</div>
+
+<div class="history-details">
+
+<h3>Fire Emergency</h3>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Camp Area, Pune
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-clock"></i>
+
+08 July 2026 | 06:30 PM
+
+</p>
+
+</div>
+
+<div class="history-status">
+
+<span class="status resolved">
+
+Resolved
+
+</span>
+
+<button class="view-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<div class="history-card">
+
+<div class="history-icon resolved">
+
+<i class="fa-solid fa-user-shield"></i>
+
+</div>
+
+<div class="history-details">
+
+<h3>Public Safety Alert</h3>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+FC Road, Pune
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-clock"></i>
+
+07 July 2026 | 02:20 PM
+
+</p>
+
+</div>
+
+<div class="history-status">
+
+<span class="status resolved">
+
+Resolved
+
+</span>
+
+<button class="view-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Silent SOS Emergency System | Developed by Alphiya Mulla
+
+</p>
+
+</footer>
+
+</html>

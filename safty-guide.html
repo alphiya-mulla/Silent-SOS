@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Guide | Silent SOS</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="safety-container">
+
+    <div class="safety-header">
+        <h1><i class="fa-solid fa-shield-heart"></i> Safety Guide</h1>
+        <p>Learn how to respond during emergencies and keep yourself and others safe.</p>
+    </div>
+
+    <div id="safety-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id=safetySearch placeholder="Search safety tips...">
+    </div>
+
+    <div class="safety-grid">
+
+        <div class="safety-card">
+            <h3>🚨 Personal Safety</h3>
+            <ul>
+                <li>Stay calm.</li>
+                <li>Move to a safe location.</li>
+                <li>Trigger Silent SOS.</li>
+                <li>Avoid confrontation.</li>
+            </ul>
+            <a href="personal-read-more.html" class="safety-btn">Read More</a>
+        </div>
+
+        <div class="safety-card">
+            <h3>🔥 Fire Emergency</h3>
+            <ul>
+                <li>Activate the fire alarm.</li>
+                <li>Use emergency exits.</li>
+                <li>Never use elevators.</li>
+                <li>Call emergency services.</li>
+            </ul>
+            <a href="fire-read-more.html" class="safety-btn">Read More</a>
+        </div>
+
+        <div class="safety-card">
+            <h3>🏥 Medical Emergency</h3>
+            <ul>
+                <li>Check breathing.</li>
+                <li>Call an ambulance.</li>
+                <li>Give first aid if trained.</li>
+                <li>Stay with the patient.</li>
+            </ul>
+            <a href="medical-read-more.html" class="safety-btn">Read More</a>
+        </div>
+
+        <div class="safety-card">
+            <h3>🚗 Road Accident</h3>
+            <ul>
+                <li>Turn on hazard lights.</li>
+                <li>Call emergency services.</li>
+                <li>Don't move injured people.</li>
+                <li>Stay at a safe distance.</li>
+            </ul>
+            <a href="road-accident-read-more.html" class="safety-btn">Read More</a>
+        </div>
+
+        <div class="safety-card">
+            <h3>🌊 Flood Safety</h3>
+            <ul>
+                <li>Move to higher ground.</li>
+                <li>Avoid flood water.</li>
+                <li>Carry emergency supplies.</li>
+                <li>Follow official updates.</li>
+            </ul>
+            <a href="flood-read-more.html" class="safety-btn">Read More</a>
+        </div>
+
+        <div class="safety-card">
+            <h3>🌍 Earthquake</h3>
+            <ul>
+                <li>Drop, Cover and Hold.</li>
+                <li>Stay away from windows.</li>
+                <li>Leave only after shaking stops.</li>
+                <li>Watch for aftershocks.</li>
+            </ul>
+            <a href="earthquake-read-more.html" class="safety-btn">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="safety-emergency">
+
+        <div class="safety-number">
+            <i class="fa-solid fa-user-shield fa-2x"></i>
+            <h2>100</h2>
+            <p>Police</p>
+        </div>
+
+        <div class="safety-number">
+            <i class="fa-solid fa-truck-medical fa-2x"></i>
+            <h2>108</h2>
+            <p>Ambulance</p>
+        </div>
+
+        <div class="safety-number">
+            <i class="fa-solid fa-fire-extinguisher fa-2x"></i>
+            <h2>101</h2>
+            <p>Fire Brigade</p>
+        </div>
+
+        <div class="safety-number">
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <h2>181</h2>
+            <p>Women Helpline</p>
+        </div>
+
+    </div>
+
+    <div class="safety-kit">
+
+        <h2>Emergency Kit Checklist</h2>
+
+        <ul>
+            <li>✔ Drinking Water</li>
+            <li>✔ First Aid Kit</li>
+            <li>✔ Flashlight</li>
+            <li>✔ Power Bank</li>
+            <li>✔ Medicines</li>
+            <li>✔ Emergency Contacts</li>
+            <li>✔ Dry Food</li>
+            <li>✔ Important Documents</li>
+        </ul>
+
+    </div>
+
+    <div class="safety-action">
+
+        <a href="dashboard.html" class="safety-btn">
+            <i class="fa-solid fa-house"></i> Dashboard
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+    const searchInput = document.getElementById("safetySearch");
+const cards = document.querySelectorAll(".safety-card");
+
+if (searchInput) {
+    searchInput.addEventListener("keyup", function () {
+
+        const searchText = this.value.toLowerCase();
+
+        cards.forEach(card => {
+
+            const text = card.textContent.toLowerCase();
+
+            if (text.includes(searchText)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+}
+
+</script>
+
+
+</body>
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Silent SOS Emergency System | Developed by Alphiya Mulla
+
+</p>
+
+</footer>
+</html>

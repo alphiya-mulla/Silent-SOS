@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Register | Silent SOS</title>
+
+<!-- Google Font -->
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+<link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body id="authPage">
+
+<div class="login-section">    
+
+<div class="login-container">
+
+<div class="login-left">
+
+<div class="brand">
+
+<img src="images/logo.jpeg" alt="Logo">
+
+<h1>Silent <span>SOS</span></h1>
+
+</div>
+
+<h2>Create Your Account</h2>
+
+<p>
+
+Register to access emergency services, save trusted contacts,
+and stay protected anytime, anywhere.
+
+</p>
+
+<img
+src="images/register.jpeg"
+class="login-image"
+alt="Register Illustration">
+
+</div>
+
+<div class="login-right">
+
+<form id="registerForm">
+
+<h2>Create Account</h2>
+
+<p>
+
+Please fill in your details to continue.
+
+</p>
+
+<div class="input-group">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="fullName"
+placeholder="Enter your full name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="+91 XXXXX XXXXX"
+required>
+
+</div>
+
+<!-- ================= PASSWORD ================= -->
+
+<div class="input-group">
+
+<label>Password</label>
+
+<input
+type="password"
+id="password"
+placeholder="Create a password"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Confirm Password</label>
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Confirm your password"
+required>
+
+</div>
+
+<!-- ================= EMERGENCY CONTACT ================= -->
+
+<h3 class="form-title">
+
+Emergency Contact
+
+</h3>
+
+<div class="input-group">
+
+<label>Emergency Contact Name</label>
+
+<input
+type="text"
+id="emergencyName"
+placeholder="Enter emergency contact name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Emergency Contact Number</label>
+
+<input
+type="tel"
+id="emergencyPhone"
+placeholder="+91 XXXXX XXXXX"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Relationship</label>
+
+<select id="relationship" required>
+
+<option value="">Select Relationship</option>
+
+<option>Mother</option>
+
+<option>Father</option>
+
+<option>Brother</option>
+
+<option>Sister</option>
+
+<option>Spouse</option>
+
+<option>Friend</option>
+
+<option>Guardian</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+<!-- ================= TERMS ================= -->
+
+<div class="remember">
+
+<label>
+
+<input type="checkbox" required>
+
+I agree to the
+<a href="#">Terms & Conditions</a>
+and
+<a href="#">Privacy Policy</a>
+
+</label>
+
+</div>
+
+<!-- ================= BUTTON ================= -->
+
+<button
+type="submit"
+class="login-btn">
+
+Create Account
+
+</button>
+
+<!-- ================= LOGIN LINK ================= -->
+
+<div class="register-link">
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>

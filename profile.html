@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile | Silent SOS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.jpeg">
+
+<h2>Silent <span>SOS</span></h2>
+
+</div>
+
+<ul class="menu">
+
+<li>
+<a href="dashboard.html">
+<i class="fa-solid fa-table-columns"></i>
+<span>Dashboard</span>
+</a>
+</li>
+
+<li>
+<a href="sos.html">
+<i class="fa-solid fa-bell"></i>
+<span>Emergency SOS</span>
+</a>
+</li>
+
+<li>
+<a href="services.html">
+<i class="fa-solid fa-hospital"></i>
+<span>Services</span>
+</a>
+</li>
+
+<li>
+<a href="report.html">
+<i class="fa-solid fa-file-circle-exclamation"></i>
+<span>Report Incident</span>
+</a>
+</li>
+
+<li class="active">
+<a href="#">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+<header class="topbar">
+
+    <h2>My Profile</h2>
+
+    <div class="profile">
+
+        <div class="profile-icon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div>
+            <h4 id="profileName">User</h4>
+            <p>User</p>
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ================= PROFILE HEADER ================= -->
+
+<section class="profile-header">
+
+<div class="cover-image"></div>
+
+<div class="profile-info">
+
+<div class="profile-avatar">
+    <i class="fa-solid fa-user"></i>
+</div>
+
+<div>
+
+<h2 id="userName">User</h2>
+
+<p>Silent SOS Member</p>
+
+</div>
+
+<div class="profile-actions">
+    <button class="edit-profile-btn" id="openEditProfile">
+        <i class="fa-solid fa-user-pen"></i>
+        Edit Profile
+    </button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= PROFILE FORM ================= -->
+
+<section class="profile-section">
+
+<div class="profile-card">
+
+<h2>Personal Information</h2>
+
+<form id="profileForm">
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Full Name</label>
+
+<input
+type="text"
+value="profileName">
+
+</div>
+
+<div class="form-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+value="profileEmail">
+
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+placeholder="profilePhone">
+
+</div>
+
+<div class="form-group">
+
+<label>Date of Birth</label>
+
+<input
+type="date">
+
+</div>
+
+</div>
+
+
+<!-- ================= ADDRESS ================= -->
+
+<div class="form-group">
+
+<label>Address</label>
+
+<textarea
+rows="4"
+placeholder="Enter your complete address"></textarea>
+
+</div>
+
+<hr class="profile-divider">
+
+<h3 class="password-title">
+    <i class="fa-solid fa-lock"></i>
+    Change Password
+</h3>
+
+<div class="form-grid">
+
+    <div class="form-group">
+        <label>Current Password</label>
+        <input
+            type="password"
+            id="currentPassword"
+            placeholder="Enter current password">
+    </div>
+
+    <div class="form-group">
+        <label>New Password</label>
+        <input
+            type="password"
+            id="newPassword"
+            placeholder="Enter new password">
+    </div>
+
+    <div class="form-group full-width">
+        <label>Confirm Password</label>
+        <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm new password">
+    </div>
+
+</div>
+
+
+<!-- ================= EMERGENCY CONTACTS ================= -->
+
+<h2 class="section-title">
+
+Emergency Contacts
+
+</h2>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Primary Contact</label>
+
+<input
+type="text"
+placeholder="Full Name">
+
+</div>
+
+<div class="form-group">
+
+<label>Relationship</label>
+
+<input
+type="text"
+placeholder="Mother / Father / Friend">
+
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+placeholder="+91 XXXXX XXXXX">
+
+</div>
+
+<div class="form-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+placeholder="contact@example.com">
+
+</div>
+
+</div>
+
+<!-- ================= MEDICAL INFORMATION ================= -->
+
+<h2 class="section-title">
+
+Medical Information
+
+</h2>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Blood Group</label>
+
+<select>
+
+<option>Select Blood Group</option>
+
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Allergies</label>
+
+<input
+type="text"
+placeholder="If any">
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label>Medical Conditions</label>
+
+<textarea
+rows="3"
+placeholder="Diabetes, Asthma, etc."></textarea>
+
+</div>
+
+<!-- ================= ACCOUNT SETTINGS ================= -->
+
+<h2 class="section-title">
+
+Account Settings
+
+</h2>
+
+<div class="settings-list">
+
+<div class="setting-item">
+
+<div>
+
+<h4>Email Notifications</h4>
+
+<p>Receive emergency notifications by email.</p>
+
+</div>
+
+<label class="switch">
+
+<input type="checkbox" checked>
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+<div class="setting-item">
+
+<div>
+
+<h4>SMS Alerts</h4>
+
+<p>Receive emergency alerts via SMS.</p>
+
+</div>
+
+<label class="switch">
+
+<input type="checkbox" checked>
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+<div class="setting-item">
+
+<div>
+
+<h4>Share Live Location</h4>
+
+<p>Allow trusted contacts to access your location during emergencies.</p>
+
+</div>
+
+<label class="switch">
+
+<input type="checkbox">
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+</div>
+
+<!-- ================= BUTTONS ================= -->
+
+<div class="report-buttons">
+
+<button
+type="reset"
+class="cancel-btn">
+
+Reset
+
+</button>
+
+<button
+type="submit"
+class="submit-btn">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Changes
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+</form>
+
+</div>
+
+</section>
+
+</div>
+
+<div class="profile-modal" id="profileModal">
+
+    <div class="profile-modal-content">
+
+        <div class="modal-header">
+
+            <h2>Edit Profile</h2>
+
+            <button class="close-modal" id="closeEditProfile">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div class="profile-form">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="editName">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="editEmail" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="editPhone">
+            </div>
+
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" id="editDob">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+
+                <select id="editGender">
+
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label>Blood Group</label>
+
+                <select id="editBlood">
+
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group full-width">
+
+                <label>Address</label>
+
+                <textarea id="editAddress"></textarea>
+
+            </div>
+
+        </div>
+
+        <div class="modal-buttons">
+
+            <button class="save-profile-btn" onclick="saveProfile()">
+
+                Save Changes
+
+            </button>
+
+            <button class="cancel-profile-btn" id="cancelEditProfile">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Silent SOS Emergency System | Developed by Alphiya Mulla
+
+</p>
+
+</footer>
+</html>

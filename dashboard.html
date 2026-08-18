@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Silent SOS</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR START ================= -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <img src="images/logo.jpeg" alt="Logo">
+
+        <h2>Silent <span>SOS</span></h2>
+
+    </div>
+
+    <ul class="menu">
+
+        <li class="active">
+            <a href="#">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="sos.html">
+                <i class="fa-solid fa-bell"></i>
+                <span>Emergency SOS</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="services.html">
+                <i class="fa-solid fa-hospital"></i>
+                <span>Services</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="report.html">
+                <i class="fa-solid fa-file-circle-exclamation"></i>
+                <span>Report Incident</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="alert-history.html">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>Alert History</span>
+            </a>
+        </li>
+
+         <li>
+            <a href="contacts.html">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Emergency Contacts</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="admin.html">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Admin</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="settings.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="logout">
+
+        <a href="#" id="logoutBtn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ================= SIDEBAR END ================= -->
+
+
+
+<!-- ================= MAIN CONTENT START ================= -->
+
+<div class="main-content">
+
+    <!-- Top Navbar -->
+
+    <header class="topbar">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text"
+                placeholder="Search emergency services...">
+
+        </div>
+
+        <div class="top-right">
+            <div class="notification-wrapper">
+
+            <button class="notification">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span class="badge">0</span>
+            
+            </button>
+            <div class="notification-dropdown" id="notificationDropdown">
+                <div class="notification-header">
+                    <h3>Notification</h3>
+                </div>
+                <div id="notificationList"></div>
+             </div>
+             </div>       
+
+    <div class="profile">
+
+    <div class="profile-icon">
+    <i class="fa-solid fa-user"></i>
+    </div>
+
+    <div>
+    <h4 id="profileName">User</h4>
+    <p>User</p>
+    </div>
+
+</div>
+                 </div>
+
+    </header>
+
+
+    <!-- Welcome Banner -->
+
+    <section class="welcome">
+
+        <div class="welcome-text">
+
+            <h1>
+
+                Welcome Back,
+                <span id="welcomeUser">User 👋</span>
+
+            </h1>
+
+            <p>
+
+                Stay connected with emergency services and keep
+                your emergency contacts updated.
+
+            </p>
+
+            <a href="sos.html" class="sos-btn">
+
+                Activate SOS
+
+            </a>
+
+        </div>
+
+        <div class="welcome-image">
+
+            <img src="images/dashbord.jpeg"
+                alt="Dashboard Illustration">
+
+        </div>
+
+    </section>
+
+
+<!-- ================= STATISTICS START ================= -->
+
+<section class="stats">
+
+    <div class="stat-card">
+
+        <div class="icon red">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+
+        <div class="info">
+            <h2>08</h2>
+            <p>Emergency Alerts</p>
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="icon blue">
+            <i class="fa-solid fa-hospital"></i>
+        </div>
+
+        <div class="info">
+            <h2>24</h2>
+            <p>Nearby Hospitals</p>
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="icon green">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div class="info">
+            <h2>15</h2>
+            <p>Emergency Contacts</p>
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="icon orange">
+            <i class="fa-solid fa-shield-heart"></i>
+        </div>
+
+        <div class="info">
+            <h2>99%</h2>
+            <p>Safety Status</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATISTICS END ================= -->
+
+<!-- ================= QUICK ACTIONS START ================= -->
+
+<section class="quick-actions">
+
+    <div class="section-header">
+
+        <h2>Quick Actions</h2>
+
+        <a href="#">View All</a>
+
+    </div>
+
+    <div class="action-grid">
+
+        <a href="sos.html" class="action-card">
+
+            <i class="fa-solid fa-bell"></i>
+
+            <h3>Activate SOS</h3>
+
+            <p>Instant emergency alert.</p>
+
+        </a>
+
+        <a href="report.html" class="action-card">
+
+            <i class="fa-solid fa-file-circle-exclamation"></i>
+
+            <h3>Report Incident</h3>
+
+            <p>Submit an emergency report.</p>
+
+        </a>
+
+        <a href="services.html" class="action-card">
+
+            <i class="fa-solid fa-hospital"></i>
+
+            <h3>Find Services</h3>
+
+            <p>Locate nearby hospitals & police.</p>
+
+        </a>
+
+        <a href="safty-guide.html" class="action-card">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <h3>Safety Guide</h3>
+
+            <p>Emergency awareness resources.</p>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= QUICK ACTIONS END ================= -->
+ 
+<!-- ================= RECENT ALERTS & CONTACTS START ================= -->
+
+<section class="dashboard-grid">
+
+    <!-- Recent Alerts -->
+
+    <div class="alerts-card">
+
+        <div class="card-header">
+
+            <h2>Recent Alerts</h2>
+
+            <a href="#">View All</a>
+
+        </div>
+
+        <div class="alert-item">
+
+            <div class="alert-icon danger">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+            </div>
+
+            <div class="alert-info">
+
+                <h4>Fire Emergency</h4>
+
+                <p>Central Market Area</p>
+
+            </div>
+
+            <span>5 min ago</span>
+
+        </div>
+
+        <div class="alert-item">
+
+            <div class="alert-icon warning">
+
+                <i class="fa-solid fa-car-burst"></i>
+
+            </div>
+
+            <div class="alert-info">
+
+                <h4>Road Accident</h4>
+
+                <p>MG Road</p>
+
+            </div>
+
+            <span>18 min ago</span>
+
+        </div>
+
+        <div class="alert-item">
+
+            <div class="alert-icon success">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <div class="alert-info">
+
+                <h4>SOS Resolved</h4>
+
+                <p>City Hospital</p>
+
+            </div>
+
+            <span>42 min ago</span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Emergency Contact Card -->
+
+<div class="contact-card dashboard-contact">
+
+    <div class="card-header">
+        <h2>
+            <i class="fa-solid fa-user-shield"></i>
+            Emergency Contacts
+        </h2>
+    </div>
+
+
+    <div id="dashboardContactList">
+
+        <!-- Contacts will load here -->
+
+    </div>
+
+
+</div>
+          
+</section>
+
+
+
+
+
+<!-- ================= ACTIVITY START ================= -->
+
+<section class="activity-card">
+
+    <div class="card-header">
+
+        <h2>Recent Activity</h2>
+
+        <a href="#">History</a>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="dot"></div>
+
+            <div>
+
+                <h4>SOS Alert Activated</h4>
+
+                <p>Your emergency request was sent successfully.</p>
+
+            </div>
+
+            <span>Today</span>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="dot"></div>
+
+            <div>
+
+                <h4>Emergency Contact Updated</h4>
+
+                <p>Your contact information has been updated.</p>
+
+            </div>
+
+            <span>Yesterday</span>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="dot"></div>
+
+            <div>
+
+                <h4>Incident Report Submitted</h4>
+
+                <p>Your report has been received successfully.</p>
+
+            </div>
+
+            <span>2 Days Ago</span>
+
+        </div>
+
+    </div>
+     </div>
+
+</section>
+
+<!-- ================= RECENT ALERTS & CONTACTS END ================= -->
+
+</div>
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Silent SOS Emergency System | Developed by Alphiya Mulla
+
+</p>
+
+</footer>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

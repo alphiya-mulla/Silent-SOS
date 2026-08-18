@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | Silent SOS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.jpeg">
+
+<h2>Silent <span>SOS</span></h2>
+
+</div>
+
+<ul class="menu">
+
+<li>
+<a href="dashboard.html">
+<i class="fa-solid fa-table-columns"></i>
+<span>Dashboard</span>
+</a>
+</li>
+
+<li>
+<a href="sos.html">
+<i class="fa-solid fa-bell"></i>
+<span>Emergency SOS</span>
+</a>
+</li>
+
+<li>
+<a href="services.html">
+<i class="fa-solid fa-hospital"></i>
+<span>Services</span>
+</a>
+</li>
+
+<li>
+<a href="report.html">
+<i class="fa-solid fa-file-circle-exclamation"></i>
+<span>Report Incident</span>
+</a>
+</li>
+
+<li>
+<a href="alert-history.html">
+<i class="fa-solid fa-clock-rotate-left"></i>
+<span>Alert History</span>
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+<i class="fa-solid fa-address-book"></i>
+<span>Emergency Contacts</span>
+</a>
+</li>
+
+<li>
+<a href="profile.html">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</a>
+</li>
+
+<li class="active">
+<a href="#">
+<i class="fa-solid fa-user-shield"></i>
+<span>Admin</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+<header class="topbar">
+
+<div>
+
+<h2>Admin Dashboard</h2>
+
+<p>Monitor emergency activities and system statistics.</p>
+
+</div>
+
+<div class="profile">
+
+<img src="images/profile.jpg">
+
+<div>
+
+<h4>Administrator</h4>
+
+<p>Admin Panel</p>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- ================= ADMIN STATISTICS ================= -->
+
+<section class="dashboard-cards">
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+</div>
+
+<div class="card-info">
+
+<h3 id="totalSOS">0</h3>
+
+<p>Total SOS Alerts</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-file-circle-exclamation"></i>
+
+</div>
+
+<div class="card-info">
+
+<h3 id="totalReports">0</h3>
+
+<p>Incident Reports</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-address-book"></i>
+
+</div>
+
+<div class="card-info">
+
+<h3 id="totalContacts">0</h3>
+
+<p>Emergency Contacts</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+<div class="card-info">
+
+<h3 id="totalUsers">0</h3>
+
+<p>Registered Users</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SYSTEM ANALYTICS ================= -->
+
+<section class="analytics-section">
+
+    <div class="section-header">
+
+        <h2>System Analytics</h2>
+
+    </div>
+
+    <div class="analytics-grid">
+
+        <!-- Active Alerts -->
+
+        <div class="analytics-card">
+
+            <div class="analytics-title">
+
+                <span>Active Alerts</span>
+
+                <span id="alertPercent">80%</span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress active-progress"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Reports -->
+
+        <div class="analytics-card">
+
+            <div class="analytics-title">
+
+                <span>Resolved Reports</span>
+
+                <span>65%</span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress report-progress"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Contacts -->
+
+        <div class="analytics-card">
+
+            <div class="analytics-title">
+
+                <span>Registered Users</span>
+
+                <span>90%</span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress user-progress"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SYSTEM STATUS ================= -->
+
+<section class="history-section">
+
+<div class="section-header">
+
+<h2>System Status</h2>
+
+</div>
+
+<div class="dashboard-cards">
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-server"></i>
+
+</div>
+
+<div class="card-info">
+
+<h3 style="color:#22C55E;">Online</h3>
+
+<p>Application Server</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-location-crosshairs"></i>
+
+</div>
+
+<div class="card-info">
+
+<h3 style="color:#22C55E;">Connected</h3>
+
+<p>GPS Service</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-bell"></i>
+
+</div>
+
+<div class="card-info">
+
+<h3 style="color:#22C55E;">Active</h3>
+
+<p>Notification Service</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-database"></i>
+
+</div>
+
+<div class="card-info">
+
+<h3 style="color:#22C55E;">Connected</h3>
+
+<p>Local Storage</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= RECENT INCIDENTS ================= -->
+
+<section class="history-section">
+
+<div class="section-header">
+
+<h2>Recent Incident Reports</h2>
+
+</div>
+
+<div id="adminReportList">
+
+</div>
+
+</section>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Silent SOS Emergency System | Developed by Alphiya Mulla
+
+</p>
+
+</footer>
+
+</html>
