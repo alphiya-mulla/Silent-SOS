@@ -1,0 +1,256 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#f8fafc;
+color:#111827;
+overflow-x:hidden;
+}
+
+/* Header */
+
+header{
+height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:10;
+animation:slideDown .8s;
+}
+
+.logo{
+font-size:25px;
+font-weight:800;
+color:#dc2626;
+}
+
+.logo i{
+margin-right:10px;
+}
+
+
+
+nav a{
+text-decoration:none;
+margin-left:30px;
+color:#374151;
+font-weight:600;
+}
+
+nav a.active,
+nav a:hover{
+color:#dc2626;
+}
+
+/* Hero */
+
+.hero{
+min-height:85vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:70px 8%;
+}
+
+.hero-text{
+width:50%;
+animation:left .9s;
+}
+
+.hero h1{
+font-size:48px;
+line-height:1.2;
+}
+
+.hero h1 span{
+color:#dc2626;
+}
+
+
+.hero p{
+margin:25px 0;
+font-size:18px;
+line-height:1.7;
+color:#4b5563;
+}
+
+.btn{
+display:inline-block;
+background:#dc2626;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.circle{
+height:320px;
+width:320px;
+border-radius:50%;
+background:#fee2e2;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:120px;
+color:#dc2626;
+animation:pulse 2s infinite;
+}
+
+/* Titles */
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:36px;
+}
+
+/* Cards */
+
+.mission{
+padding:80px 8%;
+}
+
+.mission-box{
+display:flex;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-12px);
+}
+
+.card i{
+font-size:40px;
+color:#dc2626;
+margin-bottom:20px;
+}
+
+/* Steps */
+
+.steps{
+padding:80px 8%;
+background:#111827;
+color:white;
+}
+
+.step-container{
+display:flex;
+gap:30px;
+}
+
+.step{
+background:#1f2937;
+padding:30px;
+border-radius:20px;
+}
+
+.step span{
+font-size:40px;
+color:#ef4444;
+font-weight:800;
+}
+
+/* Vision */
+
+.vision{
+padding:80px 8%;
+text-align:center;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+margin-top:40px;
+}
+
+.stats h3{
+font-size:40px;
+color:#dc2626;
+}
+
+footer{
+padding:25px;
+text-align:center;
+background:#111827;
+color:white;
+}
+
+/* Animations */
+
+@keyframes pulse{
+50%{
+transform:scale(1.08);
+}
+}
+
+@keyframes left{
+from{
+opacity:0;
+transform:translateX(-50px);
+}
+to{
+opacity:1;
+transform:none;
+}
+}
+
+@keyframes slideDown{
+from{
+transform:translateY(-50px);
+opacity:0;
+}
+to{
+transform:none;
+opacity:1;
+}
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+.hero,
+.mission-box,
+.step-container{
+flex-direction:column;
+}
+
+.hero-text{
+width:100%;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.stats{
+flex-direction:column;
+}
+}

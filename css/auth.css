@@ -1,0 +1,692 @@
+/* ==========================================
+   GOOGLE FONT & RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#F4F7FC;
+    min-height:100vh;
+}
+
+/* ==========================================
+   LOGIN SECTION
+========================================== */
+
+.login-section{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.login-container{
+
+    width:1200px;
+    max-width:100%;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   LEFT SIDE
+========================================== */
+
+.login-left{
+
+    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+
+    color:#fff;
+
+    padding:60px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.brand{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    margin-bottom:40px;
+
+}
+
+.brand img{
+
+    width:55px;
+    height:55px;
+    border-radius:50%;
+
+}
+
+.brand h2{
+
+    font-size:30px;
+    font-weight:700;
+
+}
+
+.brand span{
+
+    color:#EF4444;
+
+}
+
+.login-left h1{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.login-left p{
+
+    font-size:17px;
+
+    color:#D1D5DB;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+}
+
+.illustration{
+
+    width:100%;
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   RIGHT SIDE
+========================================== */
+
+.login-right{
+
+    padding:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.login-right form{
+
+    width:100%;
+
+}
+
+.login-right h2{
+
+    font-size:36px;
+
+    color:#111827;
+
+    margin-bottom:10px;
+
+}
+
+.login-right p{
+
+    color:#6B7280;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   INPUT FIELDS
+========================================== */
+
+.input-box{
+    margin-bottom:22px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:10px;
+    font-size:15px;
+    font-weight:600;
+    color:#374151;
+}
+
+.input-field{
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.input-field i:first-child{
+    position:absolute;
+    left:18px;
+    color:#9CA3AF;
+    font-size:16px;
+}
+
+.input-field input{
+    width:100%;
+    height:56px;
+    padding:0 55px;
+    border:1px solid #D1D5DB;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+    background:#fff;
+}
+
+.input-field input:focus{
+    border-color:#2563EB;
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+#togglePassword{
+    position:absolute;
+    right:18px;
+    cursor:pointer;
+    color:#6B7280;
+    transition:.3s;
+}
+
+#togglePassword:hover{
+    color:#111827;
+}
+
+.input-group{
+    margin-bottom:22px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:10px;
+    font-size:15px;
+    font-weight:600;
+    color:#374151;
+}
+
+.input-group input,
+.input-group select{
+    width:100%;
+    height:56px;
+    padding:0 18px;
+    border:1px solid #D1D5DB;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    background:#fff;
+    transition:.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus{
+    border-color:#2563EB;
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+/* ==========================================
+   OPTIONS
+========================================== */
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    font-size:14px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#374151;
+}
+
+.options a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================================
+   LOGIN BUTTON
+========================================== */
+
+.login-btn{
+    width:100%;
+    height:56px;
+    border:none;
+    border-radius:12px;
+    background:#DC2626;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#B91C1C;
+    transform:translateY(-2px);
+    box-shadow:0 15px 30px rgba(220,38,38,.25);
+}
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.divider{
+    position:relative;
+    text-align:center;
+    margin:35px 0;
+}
+
+.divider::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#E5E7EB;
+    left:0;
+    top:50%;
+}
+
+.divider span{
+    position:relative;
+    background:#fff;
+    padding:0 18px;
+    color:#6B7280;
+    font-size:14px;
+}
+
+/* ==========================================
+   SOCIAL LOGIN
+========================================== */
+
+.social-login{
+    display:flex;
+    gap:15px;
+}
+
+.social-login button{
+    flex:1;
+    height:54px;
+    border:1px solid #D1D5DB;
+    background:#fff;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.social-login button:hover{
+    background:#F9FAFB;
+    transform:translateY(-2px);
+}
+
+.social-login i{
+    font-size:18px;
+}
+
+/* ==========================================
+   REGISTER LINK
+========================================== */
+
+.register-link{
+    text-align:center;
+    margin-top:30px;
+    color:#6B7280;
+    font-size:15px;
+}
+
+.register-link a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.login-container{
+    grid-template-columns:1fr;
+}
+
+.login-left{
+    display:none;
+}
+
+.login-right{
+    padding:40px 30px;
+}
+
+}
+
+@media(max-width:576px){
+
+.login-section{
+    padding:20px;
+}
+
+.login-right{
+    padding:30px 20px;
+}
+
+.login-right h2{
+    font-size:30px;
+}
+
+.social-login{
+    flex-direction:column;
+}
+
+.options{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+}
+
+}
+
+/* ==========================================
+   TOAST NOTIFICATION
+========================================== */
+
+.toast{
+
+    position:fixed;
+
+    top:30px;
+
+    right:-400px;
+
+    background:#16A34A;
+
+    color:#fff;
+
+    padding:16px 24px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    transition:.5s ease;
+
+    z-index:9999;
+
+}
+
+.toast.show{
+
+    right:30px;
+
+}
+
+.toast i{
+
+    font-size:22px;
+
+}
+
+/* ==========================================
+   REGISTER PAGE
+========================================== */
+
+.form-title{
+
+    margin:25px 0 15px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    border-bottom:2px solid #E5E7EB;
+
+    padding-bottom:10px;
+
+}
+
+.input-group select{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:1px solid #D1D5DB;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-family:'Inter',sans-serif;
+
+    outline:none;
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+.input-group select:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+.register-link{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    font-size:15px;
+
+}
+
+.register-link a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.register-link a:hover{
+
+    text-decoration:underline;
+
+}
+
+.remember{
+
+    margin:20px 0;
+
+    font-size:14px;
+
+    color:#4B5563;
+
+}
+
+.remember label{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    line-height:1.6;
+
+}
+
+.remember input{
+
+    margin-top:4px;
+
+}
+
+.remember a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.remember a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.form-title{
+
+font-size:20px;
+
+}
+
+.remember label{
+
+align-items:flex-start;
+
+}
+
+}
+
+/* ==========================================
+   DARK MODE - LOGIN & REGISTER
+========================================== */
+
+body.dark-mode{
+    background:#111827;
+    color:#F9FAFB;
+}
+
+body.dark-mode .login-container{
+    background:#1F2937;
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+}
+
+body.dark-mode .login-right{
+    background:#1F2937;
+}
+
+body.dark-mode .login-left{
+    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode label{
+    color:#F9FAFB;
+}
+
+body.dark-mode input,
+body.dark-mode select{
+    background:#374151;
+    color:#F9FAFB;
+    border:1px solid #4B5563;
+}
+
+body.dark-mode input::placeholder{
+    color:#D1D5DB;
+}
+
+body.dark-mode .form-title{
+    color:#F9FAFB;
+    border-bottom:2px solid #4B5563;
+}
+
+body.dark-mode .remember{
+    color:#F9FAFB;
+}
+
+body.dark-mode .divider span{
+    background:#1F2937;
+    color:#F9FAFB;
+}
+
+body.dark-mode .social-login button{
+    background:#374151;
+    color:#F9FAFB;
+    border:1px solid #4B5563;
+}
+
+body.dark-mode .social-login button:hover{
+    background:#4B5563;
+}
+
+body.dark-mode a{
+    color:#60A5FA;
+}
